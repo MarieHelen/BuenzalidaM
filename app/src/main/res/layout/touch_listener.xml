@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/image"
+        android:src="@drawable/splash"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="31dp"
+        android:id="@+id/x1"
+        android:text="x1: "
+        android:layout_below="@+id/image"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/x2"
+        android:layout_gravity="right"
+        android:text="x2: "
+        android:layout_marginLeft="48dp"
+        android:layout_below="@+id/image"
+        android:layout_toEndOf="@+id/diff" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_weight="0.02"
+        android:id="@+id/y1"
+        android:text="y1: "
+        android:layout_below="@+id/x1"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/y2"
+        android:layout_gravity="right"
+        android:text="y2: "
+        android:layout_alignTop="@+id/y1"
+        android:layout_alignStart="@+id/x2" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/diff"
+        android:layout_gravity="center_horizontal"
+        android:text="Difference"
+        android:layout_above="@+id/motion"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/motion"
+        android:layout_gravity="center_horizontal"
+        android:text="Motion"
+        android:layout_above="@+id/quad"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/quad"
+        android:layout_gravity="center_horizontal"
+        android:text="Quadrant"
+        android:layout_marginBottom="33dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

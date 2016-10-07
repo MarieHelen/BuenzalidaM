@@ -29,6 +29,9 @@
         <activity android:name=".SignUp">
         </activity>
 
+        <activity android:name=".OnTouchListenerActivity" >
+        </activity>
+
     </application>
 
 </manifest>
